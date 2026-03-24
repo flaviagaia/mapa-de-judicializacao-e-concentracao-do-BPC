@@ -246,6 +246,12 @@ Escolha:
 - município com maior concentração do valor total: `Viçosa`
 - município com maior taxa de judicialização simulada: `Palmeira dos Índios`
 
+## Dashboard
+
+Visão da interface em `Streamlit` usada para explorar concentração, judicialização e municípios críticos:
+
+![Dashboard do projeto](assets/streamlit_dashboard.png)
+
 ## Como executar
 
 ```bash
@@ -289,3 +295,9 @@ The project uses a **synthetic but schema-aligned** BPC dataset, inspired by the
 - `36` monthly competencies
 - `7,344` synthetic rows
 - average municipal judicialization rate above `5%`
+
+### Dashboard
+
+Streamlit interface used to explore territorial concentration, judicialization, and critical municipalities:
+
+![Project dashboard](assets/streamlit_dashboard.png)
