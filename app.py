@@ -27,7 +27,8 @@ st.markdown(
 
 @st.cache_data
 def load_data():
-    if not SUMMARY_PATH.exists():
+    required_paths = [SUMMARY_PATH, SYNTHETIC_BPC_PATH, MUNICIPAL_SUMMARY_PATH]
+    if not all(path.exists() for path in required_paths):
         run_pipeline()
     bpc_df = pd.read_parquet(SYNTHETIC_BPC_PATH)
     municipal_df = pd.read_parquet(MUNICIPAL_SUMMARY_PATH)

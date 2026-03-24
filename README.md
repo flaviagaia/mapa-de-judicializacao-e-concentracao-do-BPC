@@ -2,6 +2,13 @@
 
 Projeto em `Python + Streamlit` para analisar concentração territorial e judicialização do Benefício de Prestação Continuada (BPC) com base em uma camada sintética calibrada segundo o schema oficial do Portal da Transparência.
 
+O foco do projeto é reproduzir uma análise territorial e de controle social que seria útil para monitorar:
+
+- concentração do gasto assistencial;
+- distribuição municipal do benefício;
+- participação de benefícios concedidos judicialmente;
+- municípios que merecem priorização em análise gerencial ou auditoria.
+
 ## O que é o BPC
 
 O Benefício de Prestação Continuada é um benefício assistencial previsto na LOAS. Ele garante um salário mínimo mensal à pessoa idosa com 65 anos ou mais e à pessoa com deficiência que comprovem não possuir meios de se manter nem de ser mantidas pela família. Diferentemente da aposentadoria, o BPC não exige contribuição prévia ao INSS.  
@@ -34,6 +41,10 @@ O dicionário oficial do BPC inclui campos como:
 - `Valor Parcela`
 
 Fonte oficial do schema: [Dicionário de Dados - BPC](https://portaldatransparencia.gov.br/dicionario-de-dados/bpc)
+
+Base territorial auxiliar usada na simulação:
+
+- [al_municipios_base.csv](data/raw/al_municipios_base.csv)
 
 ### Cobertura da base sintética
 
@@ -76,6 +87,8 @@ Fonte oficial do schema: [Dicionário de Dados - BPC](https://portaldatransparen
 - `36` competências mensais
 - `7.344` linhas sintéticas
 - taxa média de judicialização municipal acima de `5%`
+- município com maior concentração do valor total: `Viçosa`
+- município com maior taxa de judicialização simulada: `Palmeira dos Índios`
 
 ## Como executar
 
